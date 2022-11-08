@@ -72,3 +72,17 @@ for (let i = 0; i <= 100; i++) {
     console.log(`even number is ${i}`);
   }
 }
+
+//9
+
+for (let i = 0; i <= 100; i++) {
+  let flag = true;
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) {
+      flag = false;
+    }
+  }
+  if (flag) {
+    console.log(i);
+  }
+}
