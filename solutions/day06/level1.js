@@ -86,3 +86,41 @@ for (let i = 0; i <= 100; i++) {
     console.log(i);
   }
 }
+
+//10
+
+let sum = 0;
+let evenSum = 0;
+let oddSum = 0;
+for (let i = 0; i <= 100; i++) {
+  sum += i;
+  if (i % 2 === 0) {
+    evenSum += i;
+  } else {
+    oddSum += i;
+  }
+}
+
+console.log(`The sum of all numbers from 0 to 100 is ${sum}`, evenSum, oddSum, [
+  evenSum,
+  oddSum,
+]);
+
+let randomArr = [];
+let uniqueArr = [];
+for (let i = 0; i < 5; i++) {
+  let random = Math.random(5) * 10;
+  randomArr.push(random);
+}
+for (let i = 0; i < 10; i++) {
+  let random = Math.random(5) * 10;
+  if (!uniqueArr.includes(random)) {
+    uniqueArr.push(random);
+  }
+  if (uniqueArr.length >= 5) {
+    break;
+  }
+}
+console.log(randomArr, uniqueArr);
+
+//15 Develop a small script which generate a six characters random id: 5j2khz
