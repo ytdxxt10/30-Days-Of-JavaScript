@@ -96,4 +96,4 @@ const signIn = (email, password) => {
     }
   }
 };
-console.log(signIn("alex@alex.com", "123123"));
+signIn("alex@alex.com", "123123");
