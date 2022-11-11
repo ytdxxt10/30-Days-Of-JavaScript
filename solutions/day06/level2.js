@@ -1,25 +1,25 @@
 const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya',
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
 ];
 
 const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB',
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
 ];
 
 let newArr = [];
@@ -39,11 +39,11 @@ let newFlag = false;
 let landArr = [];
 let iaArr = [];
 for (let item of countries) {
-  if (item.includes('land')) {
+  if (item.includes("land")) {
     flag = true;
     landArr.push(item);
   }
-  if (item.endsWith('ia')) {
+  if (item.endsWith("ia")) {
     newFlag = true;
     iaArr.push(item);
   }
@@ -89,3 +89,37 @@ for (let item of webTechs) {
   webLengthArr.push(tempArr);
 }
 console.log(maxWeb, webLengthArr);
+
+//14
+let languArr = [
+  "HTML",
+  "CSS",
+  "JS",
+  "React",
+  "Redux",
+  "Node",
+  "Express",
+  "MongoDB",
+];
+
+for (let item of languArr) {
+  console.log(item);
+}
+
+let fruitArr = ["banana", "orange", "mango", "lemon"];
+let resArr = [];
+for (let i = 0; i < fruitArr.length; i++) {
+  resArr[i] = fruitArr[fruitArr.length - 1 - i];
+}
+console.log(resArr);
+
+const fullStack = [
+  ["HTML", "CSS", "JS", "React"],
+  ["Node", "Express", "MongoDB"],
+];
+
+for (let arr of fullStack) {
+  for (let item of arr) {
+    console.log(item);
+  }
+}
